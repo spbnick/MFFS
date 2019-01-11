@@ -1,0 +1,71 @@
+* Let's use Arduino Micro and the BluePill, focus on the latter
+* Atmega32U4 and STM32F103C8T6, focus on the latter
+* You can use a library: manufacturer's or open-source
+* Or you can just do it yourself if you want to have fun, learn, or do something
+  special
+* You don't need anything special, just a development board (or a kit and a
+  soldering iron) and a way to load your program to the microcontroller. A way
+  for Arduino and a way for STM32.
+  * USB serial cable I use all the time, 1.10EUR:
+    https://www.ebay.com/itm/1PCS-USB-To-RS232-TTL-UART-PL2303HX-Auto-Converter-USB-to-COM-Module-Cable/191740684242?hash=item2ca4a2a7d2:g:E-oAAOSwIwhWS-qe:rk:2:pf:0
+  * Or this dongle, not tried, 0.63EUR:
+    https://www.ebay.com/itm/USB-Serial-Controller-USB-To-TTL-PL2303HX-Converter-Module-For-arduino-AU/282543772468?hash=item41c8ebd334:g:~SQAAOSw6ShZUMBx:rk:3:pf:0
+  * The BluePill, 1.85 EUR:
+    https://www.ebay.com/itm/STM32F103C8T6-ARM-STM32-Minimum-System-Development-Board-Module-For-Arduino-DIY/112035273840
+* You will need a stack of documentation
+  * Board documentation
+        https://wiki.stm32duino.com/index.php?title=Blue_Pill
+        or from manufacturer:
+        http://www.vcc-gnd.com/cp/stm32hxb/stm32f1xxhexinban/
+        * what's there and what's the MCU
+        * how to program the MCU
+        * how to enable flashing
+  * Board schematics - find out how everything's connected
+        https://wiki.stm32duino.com/images/c/c1/Vcc-gnd.com-STM32F103C8-schematic.pdf
+        or from manufacturer:
+        http://www.vcc-gnd.com/cp/stm32hxb/stm32f1xxhexinban/
+        * find out how to program the MCU
+  * Microcontroller IC documentation (tons of information and application
+    notes):
+        https://www.st.com/en/microcontrollers/stm32f103c8.html
+      * Datasheet in particular:
+            https://www.st.com/resource/en/datasheet/stm32f103c8.pdf
+            * Pinout/muxing
+            * 5v-tolerant pins!
+            * Memory map
+            * Actual functions available
+            * Electrical characteristics
+      * Also, the microcontroller family reference manual:
+            https://www.st.com/resource/en/reference_manual/cd00171190.pdf
+            * Most of the practical information for developers, the tastiest bits!
+            * How to talk to the hardware
+      * And the helpful programming manual:
+            https://www.st.com/resource/en/programming_manual/cd00228163.pdf
+            * SysTick timer details!
+  * ARM® Cortex M3 processor technical reference manual (TRM) - pick the
+    processor for the compiler:
+        https://static.docs.arm.com/100165/0201/arm_cortexm3_processor_trm_100165_0201_01_en.pdf
+  * And finally, ARM® v7-M Architecture Reference Manual (Yummy!):
+        https://static.docs.arm.com/ddi0403/e/DDI0403E_B_armv7m_arm.pdf
+* You don't need to know all of it, just some basics and a way to control the
+  hardware functions you need.
+* Documentation stack comparison
+* Blink an LED from scratch
+    * 
+* Communicate over serial
+* Use SPI
+* Use I2C
+
+
+
+==========
+STEPS
+==========
+1. Solder PIN headers on
+2. Wash with IPA
+3. Connect the serial cable and the power:
+    * Black - GND
+    * Red   - 3.3V
+    * White - A9  - USART1 TX
+    * Green - A10 - USART1 RX
+
