@@ -17,9 +17,9 @@ reset(void)
     }
 }
 
-extern int _STACK_TOP;
+int STACK[256];
 
 const void *vectors[] __attribute__ ((section (".vectors"))) = {
-    &_STACK_TOP,
+    STACK + sizeof(STACK) / sizeof(*STACK),
     reset
 };

@@ -7,5 +7,4 @@ SECTIONS {
     .text       : { *(.text) } >flash
     .rodata     : { *(.rodata) } >flash
     .bss        : { *(.bss) } >sram
-    .stack      : { . += 0x1000; . = ALIGN(4); _STACK_TOP = .; } >sram
 }
