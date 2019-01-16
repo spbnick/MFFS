@@ -14,9 +14,9 @@
     https://www.ebay.com/itm/STM32F103C8T6-ARM-STM32-Minimum-System-Development-Board-Module-For-Arduino-DIY/112035273840
 * You will need a stack of documentation
   * Board documentation
-        https://wiki.stm32duino.com/index.php?title=Blue_Pill
+        https://wiki.stm32duino.com/index.php?title=Blue_Pill   - 7 pages
         or from manufacturer:
-        http://www.vcc-gnd.com/cp/stm32hxb/stm32f1xxhexinban/
+        http://www.vcc-gnd.com/cp/stm32hxb/stm32f1xxhexinban/   - 3 pages
         * what's there and what's the MCU
         * how to program the MCU
         * how to enable flashing
@@ -24,24 +24,24 @@
     notes):
         https://www.st.com/en/microcontrollers/stm32f103c8.html
       * Datasheet in particular:
-            https://www.st.com/resource/en/datasheet/stm32f103c8.pdf
+            https://www.st.com/resource/en/datasheet/stm32f103c8.pdf            - 117 pages
             * Pinout/muxing
             * 5v-tolerant pins!
             * Memory map
             * Actual functions available
             * Electrical characteristics
       * Also, the microcontroller family reference manual:
-            https://www.st.com/resource/en/reference_manual/cd00171190.pdf
+            https://www.st.com/resource/en/reference_manual/cd00171190.pdf      - 1134 pages
             * Most of the practical information for developers, the tastiest bits!
             * How to talk to the hardware
       * And the helpful programming manual:
-            https://www.st.com/resource/en/programming_manual/cd00228163.pdf
+            https://www.st.com/resource/en/programming_manual/cd00228163.pdf    - 156 pages
             * SysTick timer details!
   * ARM® Cortex M3 processor technical reference manual (TRM) - pick the
     processor for the compiler:
-        https://static.docs.arm.com/100165/0201/arm_cortexm3_processor_trm_100165_0201_01_en.pdf
+        https://static.docs.arm.com/100165/0201/arm_cortexm3_processor_trm_100165_0201_01_en.pdf    - 121 pages
   * And finally, ARM® v7-M Architecture Reference Manual (Yummy!):
-        https://static.docs.arm.com/ddi0403/e/DDI0403E_B_armv7m_arm.pdf
+        https://static.docs.arm.com/ddi0403/e/DDI0403E_B_armv7m_arm.pdf     - 916 pages
 * You don't need to know all of it, just some basics and a way to control the
   hardware functions you need.
 * Documentation stack comparison
