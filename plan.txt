@@ -64,3 +64,8 @@ STEPS
     * White - A9  - USART1 TX
     * Green - A10 - USART1 RX
 
+Building:
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -c -o blink.o blink.c
+arm-none-eabi-ld -T blink.ld -o blink.elf blink.o
+arm-none-eabi-objdump -x blink.elf
+arm-none-eabi-objcopy -O binary blink.elf blink.bin
