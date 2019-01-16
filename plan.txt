@@ -20,11 +20,6 @@
         * what's there and what's the MCU
         * how to program the MCU
         * how to enable flashing
-  * Board schematics - find out how everything's connected
-        https://wiki.stm32duino.com/images/c/c1/Vcc-gnd.com-STM32F103C8-schematic.pdf
-        or from manufacturer:
-        http://www.vcc-gnd.com/cp/stm32hxb/stm32f1xxhexinban/
-        * find out how to program the MCU
   * Microcontroller IC documentation (tons of information and application
     notes):
         https://www.st.com/en/microcontrollers/stm32f103c8.html
