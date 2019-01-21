@@ -10,9 +10,11 @@ reset(void)
     /* Configure the PC13 pin for open-drain output, 2MHz max speed */
     *gpioc_crh = (*gpioc_crh & ~ (0xf << ((13-8)*4))) |
                  (6 << ((13-8)*4));
-    /* Toggle PC13 forever */
+    /* Forever */
     while (1) {
+        /* Wait */
         for (i = 0; i < 500000; i++);
+        /* Toggle PC13 */
         *gpioc_odr ^= 1 << 13;
     }
 }
